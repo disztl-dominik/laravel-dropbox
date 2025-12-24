@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad4d50818f05e2189b37eb942f436b77",
+    "content-hash": "b963ed3e6c5ab45d83648c70374dcfa1",
     "packages": [
         {
             "name": "brick/math",
@@ -3586,16 +3586,16 @@
         },
         {
             "name": "spatie/flysystem-dropbox",
-            "version": "3.0.2",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/flysystem-dropbox.git",
-                "reference": "e6bf18e4dcfe5b21945bdc8b633f7e4c3ae4b9eb"
+                "reference": "01b530218caa99b546f993490e54cd13b67604ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/flysystem-dropbox/zipball/e6bf18e4dcfe5b21945bdc8b633f7e4c3ae4b9eb",
-                "reference": "e6bf18e4dcfe5b21945bdc8b633f7e4c3ae4b9eb",
+                "url": "https://api.github.com/repos/spatie/flysystem-dropbox/zipball/01b530218caa99b546f993490e54cd13b67604ff",
+                "reference": "01b530218caa99b546f993490e54cd13b67604ff",
                 "shasum": ""
             },
             "require": {
@@ -3638,7 +3638,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/flysystem-dropbox/issues",
-                "source": "https://github.com/spatie/flysystem-dropbox/tree/3.0.2"
+                "source": "https://github.com/spatie/flysystem-dropbox/tree/3.0.0"
             },
             "funding": [
                 {
@@ -3650,7 +3650,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-06T14:05:49+00:00"
+            "time": "2023-03-13T12:19:03+00:00"
         },
         {
             "name": "spatie/image",

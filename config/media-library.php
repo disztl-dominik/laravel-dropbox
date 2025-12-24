@@ -4,9 +4,10 @@ return [
 
     'default_filesystem_disk' => env('MEDIA_DISK', 'dropbox'),
 
-    'path_generator' => Spatie\MediaLibrary\Support\PathGenerator\DefaultPathGenerator::class,
+    // 'path_generator' => Spatie\MediaLibrary\Support\PathGenerator\DefaultPathGenerator::class,
+    'path_generator' => App\Media\ModelPathGenerator::class,
 
-    'file_name_generator' => Spatie\MediaLibrary\FileNameGenerator\DefaultFileNameGenerator::class,
+    // 'file_name_generator' => Spatie\MediaLibrary\FileNameGenerator\DefaultFileNameGenerator::class,
 
     'max_number_of_files_to_delete_per_batch' => 1000,
 

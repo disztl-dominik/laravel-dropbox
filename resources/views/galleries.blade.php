@@ -1,59 +1,25 @@
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Galériák</title>
-        <style>
-            body {
-                margin: 0;
-            }
-            h1 {
-                padding: 20px;
-            }
-            .gallery {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                padding: 20px;
-            }
-            .gallery-image {
-                display: flex;
-                width: 200px;
-                height: 200px;
-                padding: 5px;
-                border: 1px solid black;
-                border-radius: 10px;
-                align-items: center;
-                justify-content: center;
-            }
-            a {
-                text-decoration: none;
-                font-size: 20px;
-                color: black;
-
-                &.active {
-                    color: blue;
-                    text-decoration: underline;
-                }
-            }
-        </style>
     </head>
     <body>
-        <div style="display: flex; gap: 30px; width: 100%; padding: 20px; border-bottom: 1px solid black;">
-            <a href="#" class="active">Galéria</a>
+        <div class="flex gap-5 border-b-2 p-4">
+            <a href="#" class="text-blue-500">Galéria</a>
             <a href="/upload">Feltöltés</a>
         </div>
 
-        <h1>Galériák</h1>
-
-        <div class="gallery">
-            @foreach($pets as $pet)
-            <div class="gallery-image">
-                <a href="/gallery/{{ $pet->id}} ">
-                    <h3>{{ $pet->name }}</h3>
-                    <p>{{ $pet->description }}</p>
-                </a>
-            </div>
+        <div class="p-8">
+            @foreach($animals as $animal)
+                <div class="max-w-sm overflow-hidden shadow-2xl rounded-xl">
+                    <a href="/gallery/{{ $animal->id}}" class="flex flex-col">
+                        <h3 class="text-2xl font-unit font-black text-center p-4">{{ $animal->name }}</h3>
+                        <img src="{{ $animal->thumbnail()->getUrl() }}" alt="Image" class="pl-5 pr-5">
+                        <p class="text-center p-4">{{ $animal->description }}</p>
+                    </a>
+                </div>
             @endforeach
         </div>
     </body>
