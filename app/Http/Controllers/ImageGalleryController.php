@@ -25,6 +25,7 @@ class ImageGalleryController extends Controller
         return view('gallery', [
             'name' => $animal->name,
             'animal' => $animal,
+            'animalMedia' => $animal->getMedia(),
             'breadcrumbs' => $breadcrumbs
         ]);
     }

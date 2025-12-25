@@ -16,7 +16,12 @@
                 <div class="max-w-sm overflow-hidden shadow-2xl rounded-xl">
                     <a href="/gallery/{{ $animal->id}}" class="flex flex-col">
                         <h3 class="text-2xl font-unit font-black text-center p-4">{{ $animal->name }}</h3>
-                        <img src="{{ $animal->thumbnail()->getUrl() }}" alt="Image" class="pl-5 pr-5">
+                        <img
+                            src="{{ $animal->thumbnail()->getUrl() }}"
+                            alt="Image"
+                            class="pl-5 pr-5"
+                            x-transition
+                        >
                         <p class="text-center p-4">{{ $animal->description }}</p>
                     </a>
                 </div>

@@ -1,4 +1,4 @@
-Frefresh token:
+Refresh token:
 
 
 Auth code: https://www.dropbox.com/oauth2/authorize?client_id=APPKEYHERE&response_type=code&token_access_type=offline
