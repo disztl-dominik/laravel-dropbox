@@ -20,3 +20,6 @@ Response: {
     "uid": "1986289587",
     "account_id": "dbid:AADdffmZFXg5lXYRkDc8DaTnfiqXXGspsxI"
 }
+
+Intervention Image:
+composer require intervention/image

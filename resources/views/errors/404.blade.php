@@ -12,9 +12,9 @@
             <div class="grid md:grid-cols-2 items-center gap-2">
                 <div class="relative flex justify-center">
                     <img 
-                        src="{{ asset('images/logo.jpg') }}" 
+                        src="{{ asset('images/sherlock_popo.jpg') }}" 
                         alt="Az oldal nem található"
-                        class="w-full max-w-sm"
+                        class="w-78"
                     >
                 </div>
                 <div>
@@ -31,7 +31,7 @@
                         <a href="javascript:history.back()"
                         class="border border-gray-300 hover:border-gray-400 text-gray-700 px-6 py-3 rounded-lg font-medium transition duration-300"
                         >
-                            Vissza
+                            Állatok
                         </a>
                     </div>
                 </div>

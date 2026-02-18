@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ImageGalleryController;
+use App\Http\Controllers\CertificateController;
 
 Route::get('/', function () {
     return view('home');
@@ -10,3 +11,7 @@ Route::post('/posts', [ImageGalleryController::class, 'store']);
 Route::get('/upload', [ImageGalleryController::class, 'upload']);
 Route::get('/galleries', [ImageGalleryController::class, 'galleries']);
 Route::get('/gallery/{id}', [ImageGalleryController::class, 'gallery']);
+Route::get('/certificate', [CertificateController::class, 'certificate']);
+Route::post('/certificate/generate', [CertificateController::class, 'generate']);
+Route::get('/virtualis/oklevel/{animal}', [CertificateController::class, 'show'])
+    ->name('certificate.show');
